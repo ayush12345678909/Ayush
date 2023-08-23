@@ -1,0 +1,65 @@
+div.main {
+    width: 1250px;
+    height: 100vh;
+    background-image: url(Images/background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+div.navbar{
+    border: 2px transparent;
+    background-color: orangered;
+    width: 1250px;
+    height: 30px;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    padding-left: 140px;
+    }
+div.navbar img{
+    width: 80px;
+    position: absolute;
+    left: 5px;
+    top: 15px;
+}
+#logo{
+    padding-left: 560px;
+    height: 427px;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+
+}
+#logo img{
+    width: 200px;
+    height: auto;
+    
+    margin-left: 2%;
+    
+}
+button{
+    border: 10px solid transparent;
+    border-radius: 25px;
+    text-decoration: none;
+    color:white;
+    background-color: blue;
+  }
+  div.content {
+    width: 640px;
+    height: 427px;
+    color: black;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 2;}
+    div.content img{
+        width: 25px;
+        margin: 5px auto;
+        cursor: pointer;
+        background-color: black;
+      }
+      div.navbar a{
+        text-decoration: none;
+        }
+    
