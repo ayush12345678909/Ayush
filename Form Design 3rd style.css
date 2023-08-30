@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url(Images/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: animateBg 10s Linear infinite;
+}
+@keyframes animateBg{
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+div.login-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent ;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    }
+
+ h1{
+    font-size: 2em;
+    color:#fff;
+    text-align: center;
+ }
+ 
+ .input-box{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+ }
+
+ .input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+ }
+ .input-box input:focus~label,
+ .input-box input:valid~label{
+    top: -5px;
+ }
+ .input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+ }
+
+.input-box .icons{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.remember-forgot{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.remember-forgot a{
+    text-decoration: none;
+    color: #fff;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: medium;
+    background: url(Images/bg.jpg);
+    background-position: top;
+    background-size: cover;
+    animation: animateBg 30s Linear infinite;
+    }
+    @keyframes animateBg{
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+}
+.register-link{
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+}
+.register-link a{
+    text-decoration: none;
+    color: #fff;
+}
+.register-link a:hover{
+    text-decoration: underline;
+    
+}

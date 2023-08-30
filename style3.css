@@ -1,15 +1,19 @@
 div.main {
     width: 1250px;
     height: 100vh;
-    background-image: url(Images/background.png);
+    background-image: url(Images/bg.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
 }
+h1 b{
+  color: orangered;
+ }
 div.navbar{
     border: 2px transparent;
-    background-color: orangered;
+    background-color: #fff;
     width: 1250px;
     height: 30px;
     padding-top: 20px;
@@ -47,7 +51,7 @@ button{
   div.content {
     width: 640px;
     height: 427px;
-    color: black;
+    color:#fff;
     position: absolute;
     top: 70%;
     left: 5%;
@@ -61,5 +65,6 @@ button{
       }
       div.navbar a{
         text-decoration: none;
+        color: #000;
         }
     

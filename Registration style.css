@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url(Images/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: animateBg 10s Linear infinite;
+}
+@keyframes animateBg{
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+    div.login-box{
+        position: relative;
+        width: 350px;
+        height: 470px;
+        background: transparent ;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(5px);
+        }
+    
+     h1{
+        font-size: 2em;
+        color:#fff;
+        text-align: center;
+        padding-top: 10px;
+     }
+     
+     .input-box{
+        position: relative;
+        width: 300px;
+        margin: 30px 0;
+        border-bottom: 2px solid #fff;
+     }
+    
+     .input-box label{
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 1em;
+        color: #fff;
+        pointer-events: none;
+        transition: .5s;
+     }
+     .input-box input:focus~label,
+     .input-box input:valid~label{
+        top: -5px;
+     }
+     .input-box input{
+        width: 100%;
+        height: 50px;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        color: #fff;
+     }
+    
+    .input-box .icons{
+        position: absolute;
+        right: 8px;
+        color: #fff;
+        font-size: 1.2em;
+        line-height: 57px;
+    }
+    
+   .register-link{
+        text-align: center;
+        color: #fff;
+        padding-top: 10px;
+        border: 2px solid;
+        border-radius: 40px;
+        padding-bottom: 10px;
+       background: url(Images/bg.jpg);
+        background-position: top;
+        background-size: cover;
+        animation: animateBg 50s Linear infinite;
+        }
+        @keyframes animateBg{
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+    .register-link a{
+        text-decoration: none;
+        color: #fff;
+}
+    .register-link a:hover{
+        text-decoration: underline;
+        
+    }
